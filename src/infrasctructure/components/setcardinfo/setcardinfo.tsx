@@ -25,7 +25,7 @@ export const setCardInfo = (HTMLElement, data, image) => {
                                     <li>${
                                         data.kingdomYears
                                             ? 'Años de reinado: ' +
-                                              data.kingdomYears
+                                            data.kingdomYears
                                             : ''
                                     } </li>
                                     <li>${
@@ -49,11 +49,11 @@ export const setCardInfo = (HTMLElement, data, image) => {
                                     </li>
                                     <li></li>
                                     <li>
-                                     ${
-                                         data.servingTo
-                                             ? 'Sirviendo a: ' + data.servingTo
-                                             : ''
-                                     }
+                                    ${
+                                        data.servingTo
+                                            ? 'Sirviendo a: ' + data.servingTo
+                                            : ''
+                                    }
                                     </li>
                                 </ul>
                                 <div class="character__actions">
