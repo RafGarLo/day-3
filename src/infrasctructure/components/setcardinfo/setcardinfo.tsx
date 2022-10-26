@@ -1,7 +1,20 @@
-export const setCardInfo = (HTMLElement, data, image) => {
+export const HTMLCardElementList =
+    document.querySelectorAll('.character__card');
+
+export const setAllCardsInfo = (
+    HTMLCardElementList: NodeList,
+    characters: [],
+    listOfImages: []
+) => {
+    HTMLCardElementList.forEach((item, i) => {
+        setCardInfo(item, characters[i], listOfImages[i]);
+    });
+};
+
+export const setCardInfo = (HTMLElement: Node, data: string, image: any) => {
     HTMLElement.outerHTML = `<div class="card character__card">
                         <img
-                            src="${image}"
+                            src=${image}
                             alt="Nombre y familia del personaje"
                             alt="${data.name} de la familia ${data.family}"
                             class="character__picture card-img-top"
