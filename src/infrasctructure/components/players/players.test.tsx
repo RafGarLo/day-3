@@ -11,7 +11,7 @@ describe('Given Character component', () => {
                 weapon: 'ring',
                 dexterity: 4,
                 message: 'I am keeping it'
-         )
+        )
         
         const element = screen.getByText(/Baggins/i);
         expect(element).toBeInTheDocument();
