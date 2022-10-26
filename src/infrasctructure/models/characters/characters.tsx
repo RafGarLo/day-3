@@ -1,7 +1,9 @@
-import { Adviser } from '../../components/players/players';
-import { Warrior } from '../fighter/fighter';
-import { King } from '../king/king';
-import { Squire } from '../../components/squire/squire';
+import {
+    Adviser,
+    Warrior,
+    King,
+    Squire,
+} from '../../components/players/players';
 
 export const characters = [
     new King('Joffrey', 'Baratheon', 54, 4),

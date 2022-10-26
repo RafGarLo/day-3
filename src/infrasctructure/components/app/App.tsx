@@ -1,10 +1,11 @@
-import { AppRoutes } from '../routes/routes';
-import { Layout } from '../layout/layout';
+import { Main } from '../main/main';
 
 export function App() {
     return (
-        <Layout>
-            <AppRoutes></AppRoutes>
-        </Layout>
+        <div className="App">
+            <div className="container">
+                <Main></Main>
+            </div>
+        </div>
     );
 }
