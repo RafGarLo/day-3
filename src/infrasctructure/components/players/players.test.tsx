@@ -4,7 +4,7 @@ import { screen, render } from '@testing-library/react';
 describe('Given Character component', () => {
     test('When we render the component, it should display family name correctly', () => {
         
-        new Warrior (
+        const frodo = (
                 name:'Frodo',
                 family:'Baggins',
                 age: 189,
@@ -12,6 +12,7 @@ describe('Given Character component', () => {
                 dexterity: 4,
                 message: 'I am keeping it'
         )
+        const expectResult = new Warrior("Frodo","b")
         
         const element = screen.getByText(/Baggins/i);
         expect(element).toBeInTheDocument();
